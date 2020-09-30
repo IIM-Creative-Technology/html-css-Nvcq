@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SondGames : Pariez avec vos amis sur vos évènements préférés !</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        
+        <header>
+
+            <div id="headerDiv">
+                <img src="img/menu.png" alt="Menu Burger" id="imgBurger">
+                <p id="nom">SondGames</p>
+                <div id="headerCo">
+                    <p>Connexion</p>
+                </div>
+                <div id="headerInsc">
+                    <p>Inscription</p> 
+                </div>
+
+                <div id="divBurger">
+                    <p class="burgTitre">Sondages</p> <br> <hr> 
+                    <p class="burgTxt">#Rolland-Garros</p>
+                    <p class="burgTxt">#Koh-Lantah</p>
+                    <p class="burgTxt">#ChampionsLeague</p>
+                    <p class="burgTxt">#Ligue1</p>
+                    <p class="burgTxt">#NBA</p>
+
+                    <p class="burgTitre">Classements</p></a> <br> <hr>
+                    <a href="classement.html"><p class="burgTxt">#Rolland-Garros</p></a>
+                    <a href="classement.html"><p class="burgTxt">#Koh-Lantah</p></a>
+                    <a href="classement.html"><p class="burgTxt">#ChampionsLeague</p></a>
+                    <a href="classement.html"><p class="burgTxt">#Ligue1</p></a>
+                    <a href="classement.html"><p class="burgTxt">#NBA</p></a>
+                </div>
+
+            </div>
+            
+        </header>
+
+        <main id="mainSondage">
+
+            <h1>#Roland-Garros &emsp; | &emsp; <span id="spanCredits"> 100 Crédits </span></h1>
+
+            <section class="blocSondage">
+
+                <div class="sondage">
+                    <h3>R. Nadal - D. Thiem</h3> <br> <hr> <br>                        
+                    <p>Vainqueur du match ?</p> <br>                        
+                    <div class="bets">
+                        <div class="bet">
+                            <p>R. Nadal <br> 1,80</p>
+                        </div>
+                        <div class="bet">
+                            <p>D. Thiem <br> 2.15</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="mise" id="idMise">
+                        <p>Mise :</p>
+                        <input type="number" min="1" max="100" class="miseInput" value="1">
+                        <button id="boutonMise">Valider votre mise</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <script src="js/sondage.js"></script>
+        <script src="js/burger.js"></script>
+
+    </body>
+
+</html>

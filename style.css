@@ -1,0 +1,316 @@
+@font-face {
+    font-family: Txt;
+    src: url(font/bahnschrift.TTF);
+}
+@font-face {
+    font-family: Titre;
+    src: url(font/komtits.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00333C;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #FA8100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 2px black;
+}
+
+#headerDiv {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    cursor: pointer;
+    transition: 0.7s;
+    user-select: none;
+}
+
+header #nom {
+    color: #00333C;
+    margin-left: 100px;
+    font-family: Titre;
+    font-size: 33px;
+}
+
+#headerDiv #headerCo, #headerInsc {
+    background-color: #00333C;
+    color: #FA8100;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: Txt;
+    cursor: pointer;
+}
+
+#headerInsc {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+#headerCo {
+    position: absolute;
+    top: 8px;
+    right: 200px;
+}
+
+
+
+
+
+
+
+
+#headerDiv #divBurger {
+    width: 15%;
+    transform: translateX(-100%);
+    height: 100%;
+    background-color: #FA8100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    box-shadow: 1px 0 2px black;
+    text-align: center;
+    font-family: Txt;
+}
+
+#divBurger .burgTitre {
+    padding-top: 100px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#divBurger hr {
+    width: 60%;
+    margin: 0 auto;
+    border: 0.2px solid #00333C;
+    margin-bottom: 15px;
+}
+
+#divBurger .burgTxt {
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#divBurger .burgTxt:hover {
+    color: #00333C;
+}
+
+
+
+
+
+
+
+
+main h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-family: Titre;
+    font-size: 45px;
+}
+
+main hr {
+    width: 40%;
+    margin: 0 auto;
+}
+
+main .blocSondage {
+    width: 60%;
+    margin: 100px auto 0 auto;
+    font-family: Txt;
+}
+
+main h2 {
+    color: #FA8100;
+    font-family: Titre;
+    font-size: 30px;
+}
+
+main .sondage {
+    width: 100%;
+    border: 1px solid #FA8100;
+    text-align: center;
+    padding: 25px 0;
+    color: #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 0 0 5px black;
+}
+
+main .sondage hr {
+    width: 100px;
+    margin: 0 auto;
+    border: 0.5px solid #FA8100;
+}
+
+main .bets {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .bet {
+    width: 100px;
+    border: 1px dashed #FA8100;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+
+main .bet:hover {
+    background-color: #FA8100;
+    color: #00333C;
+}
+
+footer {
+    width: 100%;
+    background-color: #FA8100;
+    margin-top: 100px;
+    text-align: center;
+    color: #00333C;
+    font-family: Txt;
+    padding: 5px 0;
+    cursor: not-allowed;
+}
+
+
+
+
+#mainSondage h1 #spanCredits {
+    color: #FA8100;
+}
+
+#mainSondage .sondage {
+    border-top: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+#mainSondage .bets {
+    flex-direction: column;
+}
+
+#mainSondage .bet {
+    margin: 15px auto;
+}
+
+#mainSondage .mises {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainSondage .mise {
+    width: 300px;
+    margin: 50px auto 0 auto;
+    display: none;
+}
+
+#mainSondage .mise p {
+    font-size: 20px;
+}
+
+#mainSondage .miseInput {
+    text-align: center;
+    background-color: #00333C;
+    width: 70px;
+    font-size: 25px;
+    color: #FA8100;
+    user-select: none;
+}
+
+#mainSondage .mise button {
+    padding: 10px;
+    margin-top: 30px;
+    font-family: Txt;
+    color: #00333C;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: 0 9px #999;
+}
+
+#mainSondage .sondage button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+#mainRank h1 #spanClassement {
+    color: #FA8100;
+}
+
+#mainRank h1 {
+    margin-bottom: 75px;
+}
+
+#mainRank .rankDiv {
+    width: 500px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FA8100;
+    padding: 0 40px;
+    color: #ffffff;
+    font-family: Txt;
+}
+
+#mainRank #sectionRank div:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#mainRank #sectionRank div:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#mainRank #sectionRank .rankCredits {
+    color: #FA8100;
+    font-weight: bold;
+}
+
+#mainRank #sectionRank .rankP {
+    padding-top: 20px;
+}
+
+#mainRank #sectionRank .rankDiv img {
+    width: 40px;
+    height: 40px;
+    padding-top: 9px;
+}
